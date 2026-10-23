@@ -44,7 +44,7 @@ public class PrayerWorker extends Worker {
         WorkManager.getInstance(context).enqueueUniquePeriodicWork(
                 "prayer-daily", ExistingPeriodicWorkPolicy.KEEP,
                 new PeriodicWorkRequest.Builder(PrayerWorker.class, 24, TimeUnit.HOURS).build());
-        enqueue(context);
+        if (!PrayerData.isCurrent(context)) enqueue(context);
     }
 
     @NonNull
