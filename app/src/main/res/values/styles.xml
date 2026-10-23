@@ -1,0 +1,17 @@
+<resources>
+    <style name="PrayerName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="PrayerTime">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#C4D0DF</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+</resources>
